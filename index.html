@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>CV</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- Primary Page Layout –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container" style="margin-top: 5%">
+
+      <h1 id="hero">Olá, sou Denilson Melo, um <span class="hl">engenheiro de software</span> e <span class="hl">desenvolvedor web full stack</span>.</h1>
+
+      <h2 id="subhero">Sou formado em Ciência da Computação, com mestrado em Modelagem Computacional.</h2>
+      <h2 id="subhero">Minhas habilidades de destaque são:</h2>
+      <div class="row">        
+        <div class="one-third column skill">
+          <h3>Desenvolvimento Web (Full-Stack)</h3>
+          <p>PHP, HTML, CSS, JS, Wordpress, MySQL, PostgreSQL, Node.js, Vue.js, Elastic Search</p>
+        </div>
+        <div class="one-third column skill">
+          <h3>Engenharia de Software</h3>
+          <p>Planejamento de Arquitetura, Orientação a Objetos, <i>Design Patterns</i>, Java, TDD</p>
+        </div>
+        <div class="one-third column skill">
+          <h3>Programação Científica</h3>
+          <p>C, R, Python (NumPy, SciPy, scikit-learn), MPI, OpenMP, OpenCL, CUDA</p>
+        </div>
+      </div>
+
+      <h2 id="subhero">Minhas habilidades de destaque são:</h2>
+
+      <h1>Projetos</h1>
+      <h2>Portal de indicadores Nitdata</h2>
+      <p>
+      Em dezembro de 2016 fui indicado pelo coordenador do Núcleo de Inovação Tecnlógica (NIT) UESC para
+      desenvolver uma aplicação à pedido Rede NIT Nordeste.
+
+      Esta aplicação tem como objetivo facilitar a consulta e divugação dos principais indicadores de
+      desempenho dos núcleos de inovação tecnlógica da região Nordeste.
+      </p>
+      
+      <p>
+      Um dos principais requisitos da aplicação é a apresentação visual dos resultados, de forma que
+      coordenadores pudessem apresentar e discutir resultados fazendo uso direto da aplicação.
+      </p>
+
+      <p>Ao analisar o escopo do projeto e o estado da arte relevante para a eventual aplicação,
+      cheguei a conclusão que a aplicação poderia ser desenvolvida por apenas um desenvolvedor,
+      desde que esteja munido das ferramentas adequadas.
+      Assumi a responsabilidade como único desenvolvedor da aplicação.</p>
+      <div class="row">
+        <div class="seven columns">
+          <h2>Stack</h2>
+
+          <ul>
+            <li><b>Node.js e npm</b>: Ambiente para programação do código-fonte</li>
+            <li><b>Vue.js</b>: Framework para interfaces baseado na arquitetura React</li>
+            <li><b>Materialize</b>: Componentes de interface baseados em Material Design.</li>
+            <li><b>SASS</b>: Customização e manutenção do CSS</li>
+            <li><b>Chart.js</b>: Componentes de gráficos estatísticos</li>
+            <li><b>Snap.svg</b>: Manipulação de objetos SVG</li>
+          </ul>
+
+          <h2>Diferencial: Mapa interativo</h2>
+          <p>
+          O maior desafio deste projeto foi atender ao pedido de que a aplicação contesse um mapa interativo.
+          O principal caso de uso desse pedido seria: ao se interagir com o mapa, deverão ser mostrados os
+          indicadores da instituição selecionada.
+          Durante o levantamento de tecnologias, nenhuma se mostrou adequada para a tarefa.
+          </p>
+
+          
+          <p>
+          Analisando outras aplicações que faziam uso de mapas interativos, notei uma particularidade recorrente:
+          o uso de imagens SVG. Passei a procurar então por tecnologias para trabalhar com tal formato.
+          Acabei encontrado a biblioteca Snap.svg, que facilita muito a manipulação de elementos
+          SVG atráves de javascript. Estudando as funcionalidades do Snap.svg me deu idéia então de como proceder.
+          </p>
+
+
+          <p>
+          Para atender este pedido, produzi um mapa da região Nordeste no Inkscape, de forma que cada instituição
+          tivesse seu próprio elemento SVG. Foi então atribuído um identificador para cada elemento (estado
+          ou instituição), para que pudesse ser manipulado através do javascript.
+          </p>
+
+          <p>
+          Com o mapa produzido, todos os outros elementos do projeto se encaixaram. Com os identificadores
+          codificados na própria imagem foi possível detectar com qual elemento o usuário estaria interagindo,
+          permitindo que a aplicação forneça as informações adequadas, assim como apresentar <i>feedbacks</i>
+          visuais para a interação, como a mudança de cores e animações para <i>hover</i> e <i>click</i>.
+          </p>
+        </div>
+
+        <div class="five columns">
+          <h2>Screenshots</h2>
+          <img class="screenshot" src="img/nitdata0.png" alt=""/>
+          <img class="screenshot" src="img/nitdata1.png" alt=""/>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </body>
+</html>
+

@@ -1,0 +1,158 @@
+body {
+  font-size: 18px;
+}
+
+#hero {
+  font-size: 5rem;
+  margin: 150px 0 50px 0;
+}
+#subhero {
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #7b7b7b;
+  margin: 0px 0 25px 0;
+}
+.hl {
+  color: #2e7cbf;
+}
+
+.screenshot {
+  max-width: 100%;
+  /* box-shadow: 0px 0 0.5em #acacac; */
+  box-shadow: 0px 10px 20px 0px rgba(0, 25, 50, 0.1);
+  border-radius: 3px;
+  margin: 10px 0px 15px 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-align: justify;
+  margin: 10px 0 10px 0;
+}
+
+.skill p {
+  text-align: center;
+}
+
+ul {
+  text-align: justify;
+  margin: 10px 0 25px 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.slider-nav {
+  display: block;
+  margin: auto;
+}
+.slider-nav img {
+  text-align: center;
+  /* height: 100px; */
+  width: 150px;
+  object-fit: contain;
+  /* margin-right: 10px; */
+}
+/* .slider-nav div { */
+/*   background-color: #000; */
+/*   height: 150px; */
+/*   width: 150px; */
+/* } */
+.slick-track
+{
+}
+.slick-slide div
+{
+  background-color: #000;
+}
+
+img {
+  margin: auto;
+}
+
+
+
+.my-container {
+  /* width: 800px; */
+  /* background: #000; */
+}
+.swiper-container {      
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background: black;
+}
+.gallery-top {
+  /* height: 450px; */
+  width: auto;
+}
+.gallery-thumbs {  
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+  width: 128px;
+  opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.gallery-thumbs img {
+  width: inherit;
+}
+
+.frame {
+  /* height: 25px;      /1* equals max image height *1/ */
+  /* width: 160px; */
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  text-align: center; margin: 1em 0;
+  height: 400px !important;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.frame img {
+  vertical-align: middle;
+  width: inherit;
+}
+
+.frame video
+{
+	vertical-align: middle;
+	width: inherit;
+}
+
+.frame iframe {
+  vertical-align: middle;
+  width: inherit;
+  height: 400px;
+}
+
